@@ -12,6 +12,10 @@ export default function App() {
           <Weather />
         </div>
       </div>
+      <footer>
+        <a href="https://github.com/SomayaAl/weather-react">Open-Source</a> by
+        Somaya Albadawi
+      </footer>
     </div>
   );
 }
