@@ -19,12 +19,12 @@ export default function Weather() {
         <div className="col-6">
           <h1 id="city">New York</h1>
           <ul>
-            <li>
-              <h3 id="date">Monday May 30</h3>
+            <li id="date">
+              <h3>Monday May 30</h3>
             </li>
-            <li>
+            <li id="time">
               {" "}
-              <h4 id="time">11:00pm</h4>
+              <h4>11:00pm</h4>
             </li>
           </ul>
         </div>

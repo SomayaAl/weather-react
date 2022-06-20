@@ -67,9 +67,9 @@ li {
   text-align: right;
 }
 
-.forecast {
+.forecast-list {
   margin-top: 80px;
-  text-align: center;
+  display: flex;
 }
 
 .forecast-day {
