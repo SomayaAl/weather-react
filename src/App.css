@@ -1,6 +1,6 @@
 .App {
   font-family: sans-serif;
-  text-align: center;
+  
 }
 
 .weather-app-wrap {
@@ -17,32 +17,43 @@
 
 
 #city-text-input {
-  padding: 20px;
+  padding: 20px 25px;
   margin-bottom: 50px;
+  font-size: 14px
 }
 
 #search-button {
-  padding: 15px 25px;
+  margin-left: 10px;
+  padding: 19px 25px;
   font-size: 15px;
 }
 
+.current {
+  margin-top: -20px;
+}
 
-.emoji {
+.current-weather {
   font-size: 50px;
+  margin-top: 60px;
 }
 
 #city {
-  line-height: 100px;
   font-size: 35px;
   color: black;
-  margin: 1px 2px -15px;
+  margin: 30px 2px 20px;
 }
 
-#date,
+#date {
+  font-size: 25px;
+  color: black;
+  margin-left: -40px;
+}
+
 #time {
   font-size: 25px;
   color: black;
-  margin-left: -30px;
+  margin-left: -40px;
+  margin-top: 10px;
 }
 
 li {
@@ -50,14 +61,27 @@ li {
 }
 
 .humidity-wind {
-  margin-top: 100px;
+  margin-top: -70px;
   margin-left: 60px;
   font-size: 20px;
+  text-align: right;
 }
 
 .forecast {
-  margin-top: 40px;
+  margin-top: 80px;
   text-align: center;
+}
+
+.forecast-day {
+  font-size: 15px;
+}
+
+.forecast-icon {
+  text-align: center;
+}
+
+.forecast-temp {
+  font-size: 15px;
 }
 
 footer {

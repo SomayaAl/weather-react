@@ -6,10 +6,15 @@ import ReactAnimatedWeather from "react-animated-weather";
 export default function Weather() {
   return (
     <div className="container">
-      <span className="emoji" role="img" aria-label="Sunny Emoji">
-        {" "}
-        ☀️ 73°F
-      </span>
+      <div className="current">
+        <ReactAnimatedWeather
+          icon="CLEAR_NIGHT"
+          color="gray"
+          size={50}
+          animate={true}
+        />
+        <span className="current-weather">73°F</span>
+      </div>
       <div className="row">
         <div className="col-6">
           <h1 id="city">New York</h1>
@@ -32,60 +37,66 @@ export default function Weather() {
       </div>
       <div className="forecast">
         <div className="row">
-          <div className="col">Tuesday</div>
-          <div className="col">Wednesday</div>
-          <div className="col">Thursday</div>
-          <div className="col">Friday</div>
-          <div className="col">Saturday</div>
-        </div>
-        <div className="row">
-          <div className="col">
-            <ReactAnimatedWeather
-              icon="RAIN"
-              color="blue"
-              size={50}
-              animate={true}
-            />
-          </div>
-          <div className="col">
-            <ReactAnimatedWeather
-              icon="RAIN"
-              color="blue"
-              size={50}
-              animate={true}
-            />
-          </div>
-          <div className="col">
-            <ReactAnimatedWeather
-              icon="RAIN"
-              color="blue"
-              size={50}
-              animate={true}
-            />
-          </div>
-          <div className="col">
-            <ReactAnimatedWeather
-              icon="RAIN"
-              color="blue"
-              size={50}
-              animate={true}
-            />
-          </div>
-          <div className="col">
-            <ReactAnimatedWeather
-            icon="RAIN"
-            color="blue"
-            size={50}
-            animate={true}
-            />
+          <div className="col-2" key="index">
+            <div className="forecast-day"> Tuesday </div>
+            <div className="forecast-icon">
+              <ReactAnimatedWeather
+                icon="CLEAR_DAY"
+                color="gray"
+                size={50}
+                animate={true}
+              />
             </div>
-        </div>
-        <div className="row">
-          <div className="col">75°F</div>
-          <div className="col">78°F</div>
-          <div className="col">83°F</div>
-          <div className="col">79°F</div>
-          <div className="col">80°F</div>
+            <div className="forecast-temp"> 75°F </div>
+          </div>
+          <div className="col-2" key="index">
+            <div className="day"> Wednesday </div>
+            <div className="forecast-icon">
+              <ReactAnimatedWeather
+                icon="RAIN"
+                color="gray"
+                size={50}
+                animate={true}
+              />
+            </div>
+            <div className="forecast-temp"> 80°F </div>
+          </div>
+          <div className="col-2" key="index">
+            <div className="day"> Thursday </div>
+            <div className="forecast-icon">
+              <ReactAnimatedWeather
+                icon="CLOUDY"
+                color="gray"
+                size={50}
+                animate={true}
+              />
+            </div>
+            <div className="forecast-temp"> 77°F </div>
+          </div>
+          <div className="col-2" key="index">
+            <div className="day"> Friday </div>
+            <div className="forecast-icon">
+              <ReactAnimatedWeather
+                icon="WIND"
+                color="gray"
+                size={50}
+                animate={true}
+              />
+            </div>
+            <div className="forecast-temp"> 84°F </div>
+          </div>
+          <div className="col-2" key={index}>
+            <div className="day"> Saturday </div>
+            <div className="forecast-icon">
+              <ReactAnimatedWeather
+                icon="CLEAR_DAY"
+                color="gray"
+                size={50}
+                animate={true}
+              />
+            </div>
+            <div className="forecast-temp"> 79°F </div>
+          </div>
         </div>
       </div>
     </div>
